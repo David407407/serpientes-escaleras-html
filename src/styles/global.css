@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.pad-block {
+    padding-block: 8px;
+}
+
+.pad-block ul {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}

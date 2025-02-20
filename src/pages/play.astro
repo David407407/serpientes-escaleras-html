@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Dado from '../components/Dado.jsx'
+import Card from '../components/Card.jsx'
+
+---
+
+<Layout>
+	<main >
+		<Navbar />
+		<div>
+			<Card client:only/>
+			<Dado client:only />
+
+		</div>
+        
+	</main>
+</Layout>
+
+<style>
+	.monomaniac-one {
+		font-family: "Monomaniac One", serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+	
+</style>

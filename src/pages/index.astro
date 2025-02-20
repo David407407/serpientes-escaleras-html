@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+
+---
+
+<Layout>
+	<main>
+		<Navbar />
+
+		<div class="relative w-full flex flex-col items-center justify-center py-8 min-h-[480px] px-3 mt-20 lg:mt-8 space-y-4 lg:space-y-10">
+			<div class="w-7/8 mx-auto flex flex-col lg:flex-row gap-3 z-10 justify-center items-center">
+				<div class="flex">
+					<img src="/imgs/poseidon.png" alt="Imagen de poseidon" class="w-24">
+					<img src="/imgs/zeus.png" alt="Imagen de poseidon" class="w-24 lg:hidden">
+				</div>
+
+				<h1 class="text-4xl lg:text-5xl font-bold faculty-glyphic text-center">
+					<p>Bienvenido a Serpientes y Escaleras HTML</p>
+				</h1>
+				<img src="/imgs/zeus.png" alt="Imagen de poseidon" class="w-24 invisible lg:visible">
+
+			</div>
+
+			<h3 class="text-2xl font-medium outfit z-10 text-[#FFBB00] text-center">
+				<p>Aprende HTML jugando</p>
+			</h3>
+			
+			<div class="z-10 w-4/10 lg:w-[10%] mx-auto">
+				<a href="/play">
+					<button class="cursor-pointer bg-[#FF4600] px-2 py-2 lg:px-5 lg:py-2 rounded-lg font-semibold hover:scale-105 transition-all duration-300 w-full outfit">
+						<p>Jugar</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-full lg:w-6/10 mx-auto mt-8">
+			<h3 class="text-center text-2xl text-gray-200">Creado por:</h3>
+
+			<div class="pad-block flex gap-8 overflow-hidden select-none">
+				<ul aria-hidden="true" class="min-w-full flex shrink-0 justify-between gap-8 mt-3 items-center">
+					<li>
+						<p>Ián Antonio Silva Ramos</p>
+					</li>
+					<li>
+						<p>Bardo Batista Orozco</p>
+					</li>
+					<li>
+						<p>Arvin Gabriel Serna Navarro</p>
+					</li>
+					<li>
+						<p>Dana Sofia García Carlos</p>
+					</li>
+
+				</ul>
+				<ul aria-hidden="true" class="min-w-full flex shrink-0 justify-between gap-8 mt-3 items-center">
+					<li>
+						<p>Ián Antonio Silva Ramos</p>
+					</li>
+					<li>
+						<p>Bardo Batista Orozco</p>
+					</li>
+					<li>
+						<p>Arvin Gabriel Serna Navarro</p>
+					</li>
+					<li>
+						<p>Dana Sofia García Carlos</p>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style is:global>
+	.monomaniac-one {
+		font-family: "Monomaniac One", serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	
+</style>
