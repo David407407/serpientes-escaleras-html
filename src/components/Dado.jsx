@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import '../styles/dado.css'
+import "../styles/global.css";
 import { useJuegoStore } from '../store/juegoStore'
 
 const Dado = () => {

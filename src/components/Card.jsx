@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useJuegoStore } from '../store/juegoStore'
+import "../styles/global.css";
 
 const Card = () => {
     const { dado, carta, cartas, animationCard, setAnimationCard } = useJuegoStore( state => state )
