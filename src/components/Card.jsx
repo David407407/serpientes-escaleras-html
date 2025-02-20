@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { useJuegoStore } from '../store/juegoStore'
 
 const Card = () => {
-    const { dado, carta, cartas,  animationCard, setAnimationCard } = useJuegoStore( state => state )
+    const { dado, carta, cartas, animationCard, setAnimationCard } = useJuegoStore( state => state )
     const [card, setCard] = useState({})
     const videoRef = useRef(null);
 
@@ -82,8 +82,9 @@ const Card = () => {
 
   return (
     <div className='my-8'>
-        <div className='mx-auto w-52 h-72 rounded-md bg-[url(/imgs/card.jpg)] bg-center bg-no-repeat bg-cover  '>
-    </div>
+        <div className='mx-auto w-52 h-72 rounded-md'>
+            <img className='w-full rounded-md' src="/imgs/card.jpg" alt="" />
+        </div>
 
         <div className={`absolute flex ${ animationCard ? 'opacity-100 z-10' : 'opacity-0 z-[-100]'}  flex-col gap-8 justify-center items-center  min-w-full h-screen bg-black/80 top-0 left-0  transition-all duration-300 `}>
 
